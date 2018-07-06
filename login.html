@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INDOREKBER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/log.css" rel="stylesheet">
+    <link href="assets/img/icon.png" rel="shortcut icon">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </head>
+  <body>
+
+    <div class="container __wrap_login_register">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <img src="assets/img/indorekber.png" class="img-responsive img-logo" alt="">
+          <div class="__core_login_register text-center">
+            <img src="assets/img/icon-log-reg.png" alt="">
+            <h4 class="text-center">LOGIN</h4>
+            <form role="form">
+              <div class="form-group">
+                <input type="email" name="alamat_email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="6LdZo2IUAAAAAO0WxXOSAPHeTURmNP6_TAALA2FI"></div>
+              </div>
+              <button type="button" class="btn btn-login-register login">Login</button>
+                <hr>
+              <a href="register.html" type="button" class="btn btn-login-register">Daftar</a>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $('.login').click(function() {
+      window.location = 'index.html'
+    });
+    </script>
+  </body>
+</html>

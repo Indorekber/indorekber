@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INDOREKBER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/img/icon.png" rel="shortcut icon">
+  </head>
+  <body>
+
+    <!-- BEGIN NAVBAR -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/indorekber.png" alt="indorekber_logo">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="transaksi.html">TRANSAKSI</a></li>
+            <li><a href="#">TENTANG KAMI</a></li>
+            <li><button type="button" class="btn btn-navbar" name="button">MASUK</button></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- BEGIN BANER -->
+    <div class="__baner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-offset-3 __baner_image text-center">
+            <img src="assets/img/banner-transaksi.png" class="img-responsive" style="width:600px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END BANER -->
+
+    <!-- BEGIN FORM TRANSAKSI -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 body_transaksi">
+
+            <div class="col-md-4 col-md-offset-4">
+              <img src="assets/img/indorekber.png" class="img-responsive">
+            </div>
+
+            <div class="col-md-6 col-md-offset-3 text-center" style="margin-bottom:40px;" id="myTab">
+              <a href="#barang" data-toggle="tab" type="button" class="btn btn-transaksi" name="button">BARANG</a>
+              <a href="#cryptocurrency" data-toggle="tab" type="button" class="btn btn-transaksi" name="button">CRYPTOCURRENCY</a>
+              <p style="color:red">*Mohon isi data anda dengan sebenar-benarnya.</p>
+            </div>
+
+            <div class="tab-content">
+              <!-- begin-form-transaksi-barang -->
+              <div class="col-md-12 tab-pane active" id="barang">
+                <form class="form-horizontal" role="form">
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama lengkap anda
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nama_lengkap" class="form-control" placeholder="Nama Lengkap anda">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Alamat
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <textarea name="alamat" class="form-control" rows="3" placeholder="Alamat Lengkap anda"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Alamat Email
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="email" name="email_pembeli" class="form-control" placeholder="Alamat Email anda">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nomor HP
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nomor_hp" class="form-control" placeholder="Nomor HP">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama Bank
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <select class="form-control" name="nama_bank_pembeli">
+                        <option selected disabled>Pilih nama bank</option>
+                        <option value="PT BANK NEGARA INDONESIA (PERSERO) TBK">PT BANK NEGARA INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK RAKYAT INDONESIA (PERSERO) TBK">PT BANK RAKYAT INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK TABUNGAN NEGARA (PERSERO)">PT BANK TABUNGAN NEGARA (PERSERO)</option>
+                        <option value="PT. BANK MANDIRI (PERSERO) TBK">PT. BANK MANDIRI (PERSERO) TBK</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nomor Rekening
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nomor_rekening_pembeli" class="form-control" placeholder="Nomor Rekening">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Deskripsi Barang
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <textarea name="deskripsi_barang" class="form-control" rows="3" placeholder="Deskripsi Barang"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Jumlah Barang
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="jumlah_barang" class="form-control" placeholder="Jumlah Barang">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Harga Barang + Ongkir
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="harga_barang_ongkir" class="form-control" placeholder="Harga Barang + Ongkir">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Total Bayar + fee
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="total_bayar" class="form-control" placeholder="" disabled>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <h4 class="text-center">Data Penjual</h4><hr>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama Penjual
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nama_penjual" class="form-control" placeholder="Nama Penjual">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Alamat Email
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="email_penjual" class="form-control" placeholder="Alamat Email Penjual">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama Bank
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <select class="form-control" name="nama_bank_penjual">
+                        <option selected disabled>Pilih nama bank</option>
+                        <option value="PT BANK NEGARA INDONESIA (PERSERO) TBK">PT BANK NEGARA INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK RAKYAT INDONESIA (PERSERO) TBK">PT BANK RAKYAT INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK TABUNGAN NEGARA (PERSERO)">PT BANK TABUNGAN NEGARA (PERSERO)</option>
+                        <option value="PT. BANK MANDIRI (PERSERO) TBK">PT. BANK MANDIRI (PERSERO) TBK</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nomor Rekening
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nomor_rekening_penjual" class="form-control" placeholder="Nomor Rekening Penjual">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Kami sepakat menggunakan jasa indorekber sebagai pihak ketiga
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <button type="submit" class="btn btn-transaksi" style="width:100px;">Kirim</button>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <p style="color:red;">*PERHATIAN</p>
+                      <p>Semua pengiriman harus atas nama Akhmad Muzaki</p>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+              <!-- end-form-transaksi-barang -->
+
+
+
+              <!-- begin-form-transaksi-cryptocurrency -->
+              <div class="col-md-12 tab-pane" id="cryptocurrency">
+                <form class="form-horizontal" role="form">
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama lengkap anda
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nama_lengkap" class="form-control" placeholder="Nama Lengkap anda">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Alamat Wallet anda
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <textarea name="alamat_wallet" class="form-control" rows="3" placeholder="Alamat Wallet anda"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Alamat Email
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="email" name="email_pembeli" class="form-control" placeholder="Alamat Email anda">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nomor HP
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nomor_hp" class="form-control" placeholder="Nomor HP">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama Bank
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <select class="form-control" name="nama_bank_pembeli">
+                        <option selected disabled>Pilih nama bank</option>
+                        <option value="PT BANK NEGARA INDONESIA (PERSERO) TBK">PT BANK NEGARA INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK RAKYAT INDONESIA (PERSERO) TBK">PT BANK RAKYAT INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK TABUNGAN NEGARA (PERSERO)">PT BANK TABUNGAN NEGARA (PERSERO)</option>
+                        <option value="PT. BANK MANDIRI (PERSERO) TBK">PT. BANK MANDIRI (PERSERO) TBK</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nomor Rekening
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nomor_rekening_pembeli" class="form-control" placeholder="Nomor Rekening">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Deskripsi Coin
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <textarea name="deskripsi_barang" class="form-control" rows="3" placeholder="Doge Coin sebanyak 1000 Coin"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Jumlah Coin
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="jumlah_barang" class="form-control" placeholder="Jumlah Coin">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Harga Coin disepakati
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="harga_coin" class="form-control" placeholder="Harga Coin">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Total Bayar + fee
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="total_bayar" class="form-control" placeholder="" disabled>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <h4 class="text-center">Data Penjual</h4><hr>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama Penjual
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nama_penjual" class="form-control" placeholder="Nama Penjual">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Alamat Email
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="email_penjual" class="form-control" placeholder="Alamat Email Penjual">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nama Bank
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <select class="form-control" name="nama_bank_penjual">
+                        <option selected disabled>Pilih nama bank</option>
+                        <option value="PT BANK NEGARA INDONESIA (PERSERO) TBK">PT BANK NEGARA INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK RAKYAT INDONESIA (PERSERO) TBK">PT BANK RAKYAT INDONESIA (PERSERO) TBK</option>
+                        <option value="PT BANK TABUNGAN NEGARA (PERSERO)">PT BANK TABUNGAN NEGARA (PERSERO)</option>
+                        <option value="PT. BANK MANDIRI (PERSERO) TBK">PT. BANK MANDIRI (PERSERO) TBK</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-3 control-label">Nomor Rekening
+                      <span class="required">*</span>
+                    </label>
+                    <div class="col-sm-8">
+                      <input type="text" name="nomor_rekening_penjual" class="form-control" placeholder="Nomor Rekening Penjual">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Kami sepakat menggunakan jasa indorekber sebagai pihak ketiga
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <button type="submit" class="btn btn-transaksi" style="width:100px;">Kirim</button>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-10">
+                      <p style="color:red;">*PERHATIAN</p>
+                      <p>Semua pengiriman harus atas nama Akhmad Muzaki</p>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+              <!-- end-form-transaksi-cryptocurrency -->
+
+          </div> <!--end-tab-contenct-->
+        </div>
+      </div>
+    </div>
+    <!-- END FORM TRANSAKSI -->
+
+    <!-- BEGIN FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="row">
+
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <span class="logo">
+                    <img src="assets/img/indorekber_footer.png" class="img-responsive" alt="">
+                  </span>
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <ul class="adress">
+                  <span>Alamat</span>
+                  <li>
+                    <p>JL GEJAYAN SUROPANDAN XII NO. 28 Depok, Sleman Daerah Istimewa Yogyakarta</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <ul class="menu">
+                  <span>Kontak</span>
+                  <li><a href="#"><i class="fa fa-whatsapp"></i> (+62) 822 9666 6711</a></li>
+                  <li><a href="mailto:support@indorekber.id"><i class="fa fa-envelope"></i> support@indorekber.id</a></li>
+                </ul>
+                <ul class="social-footer">
+                  <li><a href="#" ><img src="assets/img/facebook.png" class="img-responsive"></a></li>
+      		        <li><a href="#" ><img src="assets/img/twitter.png" class="img-responsive" ></a></li>
+      		        <li><a href="#" ><img src="assets/img/google-plus.png" class="img-responsive"  ></a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <ul class="menu">
+                  <span>No Rekening</span>
+                  <li><img src="assets/img/no-rek.png" class="img-responsive" alt=""></li>
+                </ul>
+              </div>
+
+           </div>
+        </div>
+      </footer>
+    <!-- END FOOTER -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 200){
+        $('.navbar-default').addClass('navbar-shadow');
+      }else{
+        $('.navbar-default').removeClass('navbar-shadow');
+      }
+    });
+    $('.btn-navbar').click(function() {
+      window.location = 'login.html'
+    });
+    </script>
+  </body>
+</html>

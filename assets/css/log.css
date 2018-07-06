@@ -1,0 +1,30 @@
+/* .__wrap_login_register{
+  margin-top: 20vh;
+} */
+.__core_login_register{
+  /* border: 1px solid #000; */
+  box-shadow: 0px 0px 5px 0px #cecece;
+  border-radius: 3px;
+  padding: 20px;
+}
+.__core_login_register h4{
+  font-weight: 400;
+}
+.__core_login_register hr{
+  border: 5px dotted #c9cacc;
+  border-style: none none dotted;
+  width: 30px;
+}
+.btn-login-register{
+  background-color: #3fdbd3;
+  width: 100%;
+  color: #fff;
+}
+.__core_login_register img{
+  width: 70px;
+  margin-top: -65px;
+}
+.img-logo{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}

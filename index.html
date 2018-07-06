@@ -20,14 +20,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="assets/img/indorekber.png" alt="indorekber_logo">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">TRANSAKSI</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="transaksi.html">TRANSAKSI</a></li>
             <li><a href="#">TENTANG KAMI</a></li>
             <li><button type="button" class="btn btn-navbar" name="button">MASUK</button></li>
           </ul>
@@ -194,6 +194,12 @@
       }else{
         $('.navbar-default').removeClass('navbar-shadow');
       }
+    });
+    $('.btn-navbar').click(function() {
+      window.location = 'login.html'
+    });
+    $('.btn-register').click(function() {
+      window.location = 'register.html'
     });
     </script>
   </body>
